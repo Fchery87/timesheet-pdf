@@ -41,11 +41,11 @@ for page_num in range(len(doc)):
         # Decrement y-coordinate for the next text insertion
         x_coordinate -= 24  # Adjust this value as needed
 
-annot = page.insert_text((461, 220), dates[6], fontsize=20, rotate = 270)  # Adjust fontsize as needed
+annot = page.insert_text((461, 220), dates[6], fontsize=15, rotate = 270)  # Adjust fontsize as needed
 annot = page.insert_text((84, 635), dates[6], fontsize=10, rotate = 270)  # Adjust fontsize as needed
   
 
 
 # Save the changes to a new PDF file
-doc.save(dates[6]+".pdf")
+doc.save(f"{dates[6]} CDPAP CHERY KIMBERLY.pdf")
 doc.close()
